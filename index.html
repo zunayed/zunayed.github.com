@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properities -->
-  <title>Feed Example - Semantic</title>
+  <title>Zunayed Portfolio</title>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
@@ -43,7 +43,6 @@
 
         <h3 class="ui header"> What I do</h3>
 
-
         <p>After graduating college with an electrical engineering degree, I started working at a Mechanical, Electrical & Plumbing firm. I designed electrical infrastructure for large skyscrapers, hospitals, schools, and data centers. During my time as an senior electrical engineer, I started automating CAD modeling and the calculations that I performed and soon started creating small programs.</p>
         
         <p>My interests have been in full stack web development, hardware prototyping and data analysis.</p>
@@ -55,26 +54,60 @@
 
     <div class="ui divider"></div>
 
-    <div class="twelve wide middle column">
- 
-      <img class="ui medium floated image" src="http://i.imgur.com/qG0H1zK.jpg">
+      <div class="twelve wide middle column">
+        <div class="ui vertically divided grid">
+          <div class="row">
+            <div class="column">
+              <img class="ui medium floated image" src="http://i.imgur.com/qG0H1zK.jpg">
 
-      <h2 class="ui header">D3 Choropleth of the noisiest neighborhoods in NYC</h2>
+              <h2 class="ui header">D3 Choropleth of the noisiest neighborhoods in NYC</h2>
 
-      <p>** Update - Now with heating and graffiti data</p>
-      <p>
-        Using the information extracted from my 311 data analysis project I built a interactive map of nyc using D3. Flask was used to simply serve up the data files. 
+              <p>** Update - Now with heating and graffiti data</p>
+              <p>
+                Using the information extracted from my 311 data analysis project I built a interactive map of nyc using D3. Flask was used to simply serve up the data files. <br>
 
-      </p>
+              </p>
+              <br>
+              <a class="ui small black button" href="https://github.com/zunayed/noisyNYC">Github</a>
+              <a class="ui small green button" href="http://noisynyc.herokuapp.com">Live Demo</a>
 
-      <br>
+            </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img class="ui medium floated image" src="img/311_analysis.png">
 
-      <a class="ui black button" href="https://github.com/zunayed/noisyNYC">Github</a>
-      <a class="ui green button" href="http://noisynyc.herokuapp.com">Live Demo</a>
+            <h2 class="ui header">NYC 311 Data Analysis </h2>
 
-      <div class="ui divider"></div>
+            <p>
+              Analyzed NYC 311 data to look at distribution of complaints in various neighborhoods. In particular at neighborhoods with the most noise complaints in Brooklyn using ipython, numpy and pandas. The code can be viewed as an ipython notebook at the link below
 
-    </div>  
+            </p>
+            <br>
+            <a class="ui small black button" href="https://github.com/zunayed/pyDataAnalysis">Github</a>
+            <a class="ui small green button" href="http://nbviewer.ipython.org/github/zunayed/pyDataAnalysis/blob/2b49240c0247c684b58b41c01228f1308d793c68/Noisy%20Neighborhoods%20in%20NYC.ipynb">Live Demo</a>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="ui medium floated image" src="img/billsplitr.png">
+
+            <h2 class="ui header">Billspiltr </h2>
+
+            <p>
+              Analyzed NYC 311 data to look at distribution of complaints in various neighborhoods. In particular at neighborhoods with the most noise complaints in Brooklyn using ipython, numpy and pandas. The code can be viewed as an ipython notebook at the link below
+
+            </p>
+            <br>
+            <a class="ui small black button" href="https://github.com/zunayed/billsplitr">Github</a>
+            <a class="ui small green button" href=" http://billsplitr.herokuapp.com/">Live Demo</a>
+
+          </div>
+        </div>
+      </div>
+
 
   </div>
 
