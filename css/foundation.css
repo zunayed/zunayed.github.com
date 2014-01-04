@@ -31,7 +31,7 @@ body {
   font-size: 100%; }
 
 body {
-  background: white;
+  background: url(../img/texture-noise.png);
   color: rgb(85, 85, 85);
   padding: 0;
   margin: 0;
@@ -5330,14 +5330,12 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 
-.menu_main {
-  border-right-style:solid;
+.vr {
+    width:1px;
+    background-color: rgb(221, 221, 221);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:100%;
 }
 
-#verticalLine {
-  width: 1px; /* Line width */
-  background-color: black; /* Line color */
-  height: 100%; /* Override in-line if you want specific height. */
-  float: right; /* Causes the line to float to left of content. 
-    You can instead use position:absolute if this fits better with your design */
-}
