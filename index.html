@@ -1,218 +1,162 @@
-<!DOCTYPE html>
-<head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <!-- Site Properities -->
-  <title>Zunayed Portfolio</title>
-
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="packaged/css/semantic.css">
-
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
-  <script src="packaged/javascript/semantic.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="examples/feed.css">
-  <script src="examples/feed.js"></script>
-</head>
-<body id="feed">
-
-  <div class="ui celled grid">
-    <div class="five wide middle column">
-      <img class="circular ui small floated image" src="img/profile.jpg">
-
-      <h2 class="ui header">
-        Zunayed A Morsalin
-      </h2>
-      <p> Electrical, Electronic & Computer Engineer</p>
- 
-      <div class="ui divided inbox selection list active tab" data-tab="contact">
-        
-      </div>
-      <div>
-        <br>
-        <h3 class="ui header">Who I am</h3>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zunayed's Portfolio</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+  <br>
+    <div class="row">
+      <div class="large-4 columns">
+        <p>
+          <img src="img/profile.jpg" width="30%" align="left" hspace="10">
+          <h3><strong>Zunayed A Morsalin</strong></h3>
+          <p><i> Electrical, Electronic & Computer Engineer</i></p>
+        </p>
+        <br/>
+        <h4><strong>Who I am</strong></h4>
 
         <p>My name is Zunayed Ali and  I grew up in Brooklyn. This is a place that lets anyone who is inclined partake in my musings of human and machine language.</p>
 
-        <h3 class="ui header"> What I do</h3>
+        <h4 class="ui header"><strong>What I do</strong></h4>
 
         <p>After graduating college with an electrical engineering degree, I started working at a Mechanical, Electrical & Plumbing firm. I designed electrical infrastructure for large skyscrapers, hospitals, schools, and data centers. During my time as an senior electrical engineer, I started automating CAD modeling and the calculations that I performed and soon started creating small programs.</p>
-        
+
         <p>My interests have been in full stack web development, hardware prototyping and data analysis.</p>
 
         <p>For fun i have been working on a robotic arm</p>
         <p>Email - zunayed@gmail.com</p>
 
+      </div>
 
+      <div class="large-8 columns">
+        <div class="large-3 column">
+          <img src="http://i.imgur.com/qG0H1zK.jpg">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>D3 Choropleth of the noisiest neighborhoods in NYC</strong></h3>
+          <p>
+            ** Update - Now with heating and graffiti data
+            <br/>
+            Using the information extracted from my 311 data analysis project I built a interactive map of nyc using <strong>D3.js</strong>. Flask was used to simply serve up the data files. 
+
+            <br>
+            <a class="tiny success button" href="https://github.com/zunayed/noisyNYC">Github</a>
+            <a class="tiny button" href="http://noisynyc.herokuapp.com">Live Demo</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/311_analysis.png">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>NYC 311 Data Analysis</strong></h3>
+          <p>
+            Analyzed NYC 311 data to look at distribution of complaints in various neighborhoods. In particular at neighborhoods with the most noise complaints in Brooklyn using <strong>ipython, numpy</strong> and <strong>pandas</strong>. The code can be viewed as an <strong>ipython notebook</strong> at the link below
+            <br/>
+            <a class="tiny success button" href="https://github.com/zunayed/pyDataAnalysis">Github</a>
+            <a class="tiny button" href="http://nbviewer.ipython.org/github/zunayed/pyDataAnalysis/blob/2b49240c0247c684b58b41c01228f1308d793c68/Noisy%20Neighborhoods%20in%20NYC.ipynb">Live Demo</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/billsplitr.png">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>Billsplitr - A real time bill/check calculator</strong></h2>
+          <p>
+            Web app that allows for a group of people to connect to a shared room and add their items. The app shows the tax and tip relative to each item that’s been added. Built using <strong>Node.js, express</strong> and <strong>Jade</strong> for templating. <strong>Mocha & Istanbul</strong> for code coverage and testing         
+            <br/>
+            <a class="tiny success button" href="https://github.com/zunayed/billsplitr">Github</a>
+            <a class="tiny button" href="http://billsplitr.herokuapp.com/">Live Demo</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/gmail_notifier.jpeg">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>Gmail Arduino Notifier</strong></h2>
+          <p>
+            Sends a new mail alert using a simple <strong>python</strong> script to the <strong>arduino</strong> so you can control a relay that will switch a walk/don't walk sign
+            <br/>
+            <a class="tiny success button" href="https://github.com/zunayed/gmail_arduino_notifier">Github</a>
+            <a class="tiny alert button" href="http://dtostillwell.com/?p=301">blog</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/forgetmenot.png">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>ForgetMeNot - Soundcloud & Youtube Favorite managment</strong></h2>
+          <p>
+            Unfortunately when a video you have favorited in Soundcloud or youtube is deleted it gets removed from all your playlist and you are not informed. All you are left with is a very unhelpful "video deleted" message. You can imagine for someone with a fair amount of favorites it would be quite difficult to know what video/song number 56 of 240 was. Thats where ForgetMeNot comes in. Using the SoundCloud & Youtube Api to parse favorites into a Postgres database the app will automatically track each of your favorites links to make sure the links are still alive. Project is about 90% done! Tools - <strong>python, flask, postgres, sqlAlchemy</strong> and <strong>jquery</strong>
+            <br/>
+            <a class="tiny success button" href="https://github.com/zunayed/forgetmenot">Github</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/namegame.png">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>Namegame</strong></h2>
+          <p>
+            When I started Hacker School, I wanted to create a game that would help my classmates learn one another’s names. This game generates 4 random people, as well as the names of these people - the goal of the game is to match the names to the pictures. A stats page has been created so that everyone can see the percentage of people that are guessing specific names correctly. Also I have a script that extracts all the students names and profile images using <strong>beautifulsoup</strong>.
+            <br/>
+            <a class="tiny success button" href="https://github.com/zunayed/NameGame">Github</a>
+            <a class="tiny button" href="http://hs-namegame.herokuapp.com/">Live Demo</a>
+            <a class="tiny button" href="http://hs-namegame.herokuapp.com/stats">Live Demo</a>
+          </p>
+        </div> 
+
+        <hr/>
+
+        <div class="large-3 column">
+          <img src="img/webcam.jpg">
+        </div>
+
+        <div class="large-9 column">
+          <h3><strong>Webcam Robot</strong></h2>
+          <p>
+            Using a joystick to control a webcamera mounted on two servos
+            <br/>     
+            <a class="tiny alert button" href="http://www.youtube.com/watch?v=T_FsjoupGEA">Youtube</a>
+            <a class="tiny alert button" href="http://dtostillwell.com/?p=215">blog</a>
+          </p>
+          <br/>
+        </div> 
+
+        <hr/>
 
       </div>
     </div>
 
-    <div class="ui divider"></div>
-
-      <div class="twelve wide middle column">
-        <div class="ui vertically divided grid">
-          <div class="row">
-            <div class="column">
-              <div class="ui grid">
-                <div class="five wide column">
-                  <img class="ui medium floated image" src="http://i.imgur.com/qG0H1zK.jpg">
-                </div>
-
-                <div class="eleven wide column">
-                  <h2 class="ui header">D3 Choropleth of the noisiest neighborhoods in NYC</h2>
-                  <p>** Update - Now with heating and graffiti data</p>
-                  <p>
-                    Using the information extracted from my 311 data analysis project I built a interactive map of nyc using <strong>D3.js</strong>. Flask was used to simply serve up the data files. 
-
-                    <br>
-                    <br>
-                    <a class="ui small black button" href="https://github.com/zunayed/noisyNYC">Github</a>
-                    <a class="ui small green button" href="http://noisynyc.herokuapp.com">Live Demo</a>
-                  </p>
-                </div>  
-              </div>
-            </div>
-          </div>
-
-
-        <div class="row">
-          <div class="column">
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/311_analysis.png">
-              </div>
-
-              <div class="eleven wide column">
-                <h2 class="ui header">NYC 311 Data Analysis </h2>
-
-                <p>
-                  Analyzed NYC 311 data to look at distribution of complaints in various neighborhoods. In particular at neighborhoods with the most noise complaints in Brooklyn using <strong>ipython, numpy</strong> and <strong>pandas</strong>. The code can be viewed as an <strong>ipython notebook</strong> at the link below
-                  <br>
-                  <br>
-                  <a class="ui small black button" href="https://github.com/zunayed/pyDataAnalysis">Github</a>
-                  <a class="ui small green button" href="http://nbviewer.ipython.org/github/zunayed/pyDataAnalysis/blob/2b49240c0247c684b58b41c01228f1308d793c68/Noisy%20Neighborhoods%20in%20NYC.ipynb">Live Demo</a>
-                </p>
-              </div> 
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/billsplitr.png">
-              </div>
-
-              <div class="eleven wide column">
-                <h2 class="ui header">Billsplitr - A real time bill/check calculator</h2>
-                <p>
-                  Web app that allows for a group of people to connect to a shared room and add their items. The app shows the tax and tip relative to each item that’s been added. Built using <strong>Node.js, express</strong> and <strong>Jade</strong> for templating. <strong>Mocha & Istanbul</strong> for code coverage and testing         
-                  <br>
-                  <br>
-                  <a class="ui small black button" href="https://github.com/zunayed/billsplitr">Github</a>
-                  <a class="ui small green button" href=" http://billsplitr.herokuapp.com/">Live Demo</a>
-                </p>
-              </div>  
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/gmail_notifier.jpeg">
-              </div>
-
-              <div class="eleven wide column">
-                <h2 class="ui header">Gmail Arduino Notifier </h2>
-                <p>
-                  Sends a new mail alert using a simple <strong>python</strong> script to the <strong>arduino</strong> so you can control a relay that will switch a walk/don't walk sign
-                  <br>
-                  <br>
-                  <a class="ui small purple button" href="http://dtostillwell.com/?p=301">Blog Post</a>
-                  <a class="ui small black button" href="https://github.com/zunayed/gmail_arduino_notifier">Github</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> 
-
-        <div class="row">
-          <div class="column">          
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/forgetmenot.png">
-              </div>
-            
-              <div class="eleven wide column">
-                <h2 class="ui header">ForgetMeNot - Soundcloud & Youtube Favorite managment </h2>
-                <p>
-                  Unfortunately when a video you have favorited in Soundcloud or youtube is deleted it gets removed from all your playlist and you are not informed. All you are left with is a very unhelpful "video deleted" message. You can imagine for someone with a fair amount of favorites it would be quite difficult to know what video/song number 56 of 240 was. Thats where ForgetMeNot comes in.
-
-                  Using the SoundCloud & Youtube Api to parse favorites into a Postgres database the app will automatically track each of your favorites links to make sure the links are still alive. Project is about 90% done! Tools - <strong>python, flask, postgres, sqlAlchemy</strong> and <strong>jquery</strong>
-                  <br>
-                  <br>
-                  <a class="ui small black button" href="https://github.com/zunayed/forgetmenot">Github</a>
-                </p>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>     
-
-        <div class="row">
-          <div class="column">
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/namegame.png">
-              </div>
-
-              <div class="eleven wide column">
-                <h2 class="ui header">NameGame </h2>
-                <p>
-                  When I started Hacker School, I wanted to create a game that would help my classmates learn one another’s names. This game generates 4 random people, as well as the names of these people - the goal of the game is to match the names to the pictures. A stats page has been created so that everyone can see the percentage of people that are guessing specific names correctly. Also I have a script that extracts all the students names and profile images using <strong>beautifulsoup</strong>.
-                  <br>
-                  <br>
-                  <a class="ui small black button" href="https://github.com/zunayed/NameGame">Github</a>
-                  <a class="ui small green button" href=" http://hs-namegame.herokuapp.com/">Live Demo</a>
-                  <a class="ui small green button" href=" http://hs-namegame.herokuapp.com/stats">Student Stats</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>      
-
-        <div class="row">
-          <div class="column">
-            <div class="ui grid">
-              <div class="five wide column">
-                <img class="ui medium floated image" src="img/webcam.jpg">
-              </div>
-
-              <div class="eleven wide column">
-                <h2 class="ui header">Webcam Robot </h2>
-                <p>
-                  Using a joystick to control a webcamera mounted on two servos
-                  <br>
-                  <br>
-                  <a class="ui small purple button" href="http://dtostillwell.com/?p=215">Blog Post</a>
-                  <a class="ui small red button" href="http://www.youtube.com/watch?v=T_FsjoupGEA">Video</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>   
-
-      </div>
-  </div>
-
-</body>
-
+  
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
